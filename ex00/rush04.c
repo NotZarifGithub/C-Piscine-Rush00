@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush01.c                                           :+:      :+:    :+:   */
+/*   rush04.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabd-ram <mabd-ram@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/28 15:20:09 by mabd-ram          #+#    #+#             */
-/*   Updated: 2024/04/28 15:24:00 by mabd-ram         ###   ########.fr       */
+/*   Created: 2024/04/28 15:32:04 by mabd-ram          #+#    #+#             */
+/*   Updated: 2024/04/28 15:33:19 by mabd-ram         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ void	rush(int x, int y)
 		while (col <= x)
 		{
 			if ((row == 1 && col == 1) || (row == y && col == x))
-				ft_putchar('/');
+				ft_putchar('A');
 			else if ((row == 1 && col == x) || (row == y && col == 1))
-				ft_putchar('\\');
+				ft_putchar('C');
 			else if (row == 1 || row == y || col == 1 || col == x)
-				ft_putchar('*');
+				ft_putchar('B');
 			else
 				ft_putchar(' ');
 			col++;
